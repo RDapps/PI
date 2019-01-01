@@ -1,0 +1,30 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+        address 192.168.1.101
+        network 192.168.1.0
+        broadcast 192.168.1.255
+        netmask 255.255.255.0
+
+#auto wlan0
+#iface wlan0 inet dhcp
+# wpa-ssid "BTHub5-J6KR"
+# wpa-psk "78b6825c96"
+
+allow-hotplug wlan0
+iface wlan0 inet static
+        address 192.168.1.111
+        network 192.168.1.0
+        broadcast 192.168.1.255
+        netmask 255.255.255.0
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+
+
+
+
+
+
