@@ -3,10 +3,10 @@ iface lo inet loopback
 
 auto eth0
 iface eth0 inet static
-        address 192.168.1.101
-        network 192.168.1.0
-        broadcast 192.168.1.255
-        netmask 255.255.255.0
+        address 
+        network 
+        broadcast 
+        netmask 
 
 #auto wlan0
 #iface wlan0 inet dhcp
@@ -15,10 +15,10 @@ iface eth0 inet static
 
 allow-hotplug wlan0
 iface wlan0 inet static
-        address 192.168.1.111
-        network 192.168.1.0
-        broadcast 192.168.1.255
-        netmask 255.255.255.0
+        address 
+        network 
+        broadcast 
+        netmask 
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 
